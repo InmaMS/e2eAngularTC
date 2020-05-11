@@ -1,0 +1,23 @@
+{
+    "files.exclude": {
+        "**/*.js.map": true,
+        "**/*.js": { "when": "$(basename).ts" }
+      },
+    "cucumberautocomplete.steps": [
+        "test/specs/*.ts",
+        "node_modules/qa-lib/src/step_definitions/*.js"
+    ],
+    "cucumberautocomplete.syncfeatures": "test/features/*feature",
+    "cucumberautocomplete.strictGherkinCompletion": true,
+    "cucumberautocomplete.customParameters": [
+          {
+              "parameter":"{ab}",
+              "value":"(a|b)"
+          }
+      ],
+      "editor.quickSuggestions": {
+        "comments": false,
+        "strings": true,
+        "other": true
+    }
+}

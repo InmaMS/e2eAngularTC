@@ -1,0 +1,30 @@
+{
+  "name": "e2eangular",
+  "version": "1.0.0",
+  "description": "E2E project to test Angular.io page",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "cd ./node_modules && npm i webdriver-manager@latest && webdriver-manager update",
+    "test": "tsc && protractor test/protractor.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/jasmine": "^3.5.10",
+    "@types/mkdirp": "^1.0.0",
+    "@types/node": "^13.13.5",
+    "protractor": "^5.4.4",
+    "typescript": "^3.8.3"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.11",
+    "@types/cucumber": "^6.0.1",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "cucumber": "^6.0.5",
+    "cucumber-html-reporter": "^5.2.0",
+    "mkdirp": "^1.0.4",
+    "protractor-cucumber-framework": "^6.2.1",
+    "ts-node": "^8.10.1"
+  }
+}
